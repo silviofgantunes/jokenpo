@@ -18,8 +18,7 @@ No Terminal, vá até o repositório e execute `go build main.go`.
 Com a aplicação rodando, envie a requisição abaixo pelo Terminal:
 `curl -X POST http://localhost:8080/play \
      -H "Content-Type: application/json" \
-     -d '{"move": "paper"}' | jq
-`
+     -d '{"move": "paper"}' | jq`
 O parâmetro `move` pode receber os valores `rock`, `paper` e `scissors`. A aplicação deverá devolver um JSON contendo o
 movimento do jogador que o usuário acabou de inserir, o movimento aleatoriamente escolhido pelo computador e o resultado da partida.
 Desenvolveu-se também TUs para os métodos `getWinner` e `handlerPlay`. Os testes podem ser executados através do comando
